@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food List and Basket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    
+<!--Add Food Form-->
+    
+    <div class="container mt-5 mb-5">
+        <h1 class="display-4 text-center mb-4">
+            <i class="fas fa-scroll text-primary "></i> Food List
+        </h1>
+        <form id="food-form">
+            <div class="form-group">
+                <label for="foodname">Food name</label>
+                <input type="text" id="foodname"
+                class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="origin">Food origin</label>
+                <input type="text" id="origin"
+                class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="price">Willing to pay</label>
+                <input type="text" id="price"
+                class="form-control">
+            </div>
+            <input type="submit" value="+ Food on the list" class="btn btn-primary btn-block">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Food Name</th>
+                    <th>Origin</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="food-list"></tbody>
+        </table>
+    </div>   
+
+<!--Drag and Drop-->
+
+    <h1 class="display-5 text-center mb-3">
+        <i class="fas fa-shopping-basket text-primary mt-3 mb-4"></i> Food Basket <i class="fas fa-arrow-down"></i>
+    </h1>
+
+    <div class="box-parent container p-0 ">
+        
+        <div class="box-origin">
+            <h4 class="container text-center">
+                Available
+            </h4>
+            
+          <div
+            id="draggable-1" class="box-draggable" draggable="true" ondragstart="onDragStart(event)">
+            <i class="fas fa-hamburger "></i>
+          </div>
+
+          <div id="draggable-2" class="box-draggable" draggable="true" ondragstart="onDragStart(event)">
+            <i class="fas fa-egg"></i>
+          </div>
+
+          <div id="draggable-3" class="box-draggable" draggable="true" ondragstart="onDragStart(event)">
+            <i class="fas fa-pizza-slice"></i>
+          </div>
+
+          <div
+            id="draggable-4" class="box-draggable" draggable="true" ondragstart="onDragStart(event)">
+            <i class="fas fa-cheese"></i>
+          </div>
+
+          <div id="draggable-5" class="box-draggable" draggable="true" ondragstart="onDragStart(event)">
+            <i class="fas fa-lemon"></i>
+          </div>
+
+          <div
+            id="draggable-6" class="box-draggable" draggable="true" ondragstart="onDragStart(event)">
+            <i class="fas fa-carrot"></i>
+          </div>
+
+          <div id="draggable-7" class="box-draggable" draggable="true" ondragstart="onDragStart(event)">
+            <i class="fas fa-apple-alt"></i>
+          </div>
+
+          <div id="draggable-8" class="box-draggable" draggable="true" ondragstart="onDragStart(event)">
+            <i class="fas fa-bread-slice"></i>
+          </div>
+
+        </div>
+      
+        <div 
+          class="box-dropzone" ondragover="onDragOver(event)" ondrop="onDrop(event)"> 
+        </div>
+        
+            
+    </div>
+
+    <footer><br><br></footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

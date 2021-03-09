@@ -1,0 +1,96 @@
+.fa-scroll {
+    color: rgb(78, 171, 73) !important;
+}
+.fa-shopping-basket {
+    color: rgb(78, 171, 73) !important;   
+}
+.fa-hamburger {
+    color: rgb(223, 123, 93) !important;
+    transform: scale(3);
+}
+.fa-pizza-slice {
+    color: hotpink !important;
+    transform: scale(3);
+}
+.fa-egg {
+    color: rgb(231, 229, 190) !important;
+    transform: scale(3);
+}
+.fa-lemon {
+    color: rgb(248, 252, 127) !important;
+    transform: scale(3);
+}
+.fa-cheese {
+    color: rgb(223, 160, 43) !important;
+    transform: scale(3);
+
+}
+.fa-fish {
+    color: rgb(30, 24, 193) !important;
+    transform: scale(3);
+}
+.fa-carrot {
+    color: rgb(235, 87, 33);
+    transform: scale(3);
+}
+.fa-apple-alt {
+    color: red;
+    transform: scale(3);
+}
+.fa-bread-slice {
+    color: rosybrown;
+    transform: scale(3);
+}
+
+
+
+.box-parent {
+    border: 1px solid #000000;
+    color: black;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+
+.box-origin {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px; 
+  }
+
+.box-draggable {
+    display: flex;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    justify-content: center;
+    background-color: #fafafa;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    
+    width: 80px;
+    height: 80px;;
+    border-radius: 10%;
+
+    padding: 50px;
+  }
+
+.box-dropzone {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    background-color: #e2f7dd;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 50px;
+  }
